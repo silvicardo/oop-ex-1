@@ -10,17 +10,15 @@
     //require del file della classe
     require 'Prodotto.php';
 
-
     //creazione oggetto tramite il costruttore
-    $pallone = new Prodotto('Pallone', 25, 'sport');
+    $pallone = new Prodotto('Pallone', 5, 'sport'); ?>
 
-    //stampa tutti i valori dell'oggetto
-    var_dump($pallone);
+    <!-- Modifica di un valore protetto tramite funzioni -->
+    <p>Ci sono <?php echo $pallone->dammiQuantitaDisponibile(); ?> palloni </p>
 
+    <?php $pallone->aggiornaQuantita(0); ?>
 
-
-
-
+    <p>Ci sono <?php echo $pallone->dammiQuantitaDisponibile(); ?> palloni </p>
 
 
      ?>
