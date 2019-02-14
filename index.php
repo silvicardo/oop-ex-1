@@ -21,6 +21,6 @@
     <p>Ci sono <?php echo $pallone->dammiQuantitaDisponibile(); ?> palloni </p>
 
 
-     ?>
+     
   </body>
 </html>
